@@ -1,0 +1,1 @@
+INSERT INTO sms(sms_name, sms_phone, sms_messages) VALUES('Oybek', 998970072397, 'salom');
