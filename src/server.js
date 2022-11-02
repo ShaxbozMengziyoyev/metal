@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
 const modules = require('./modules')
+const PORT = process.env.PORT || 9000
 
 app.use(express.json())
 app.use(modules)
 
-app.listen(9000, console.log(9000))
+app.listen(PORT, console.log(PORT))
