@@ -1,8 +1,8 @@
 const { Pool } = require('pg')
+const { connection } = require('../config');
 
 const pool = new Pool({
-    connectionString: 'postgres://okswmsar:Qr0IWhS2oCGlSqbFXlhTEbpQsS6Gumrf@heffalump.db.elephantsql.com/okswmsar'
-    // elephantConnectionString: 'postgres://okswmsar:Qr0IWhS2oCGlSqbFXlhTEbpQsS6Gumrf@heffalump.db.elephantsql.com/okswmsar'
+    connectionString: connection.elephantConnectionString
 })
 
 class PG {
